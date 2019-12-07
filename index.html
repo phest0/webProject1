@@ -15,24 +15,24 @@
 <body>
 
   <!-- debut navbar -->
-  <div class="navbar">
-    <div class="container logoDisplayNone logoDisplayBlock">
-      <img src="image/logoResp.png" alt="CREDIBILITY">
+  <div class="navbar" id="shadowNav">
+    <div class="container logoDisplayNone logoDisplayBlock paddingResp">
+      <a href="index.html"><img src="image/logoResp.png" alt="CREDIBILITY"></a>
     </div>
-    <nav class="container displayFlex" id="shadowNav">
+    <nav class="container displayFlex">
       <!-- lien H/F -->
       <div class="navbarLeft">
         <ul>
           <!-- menu "hamburger en display none sur desktop" -->
           <li id="noMarginLi"><a href="#"><i class="fas fa-bars"></i></a></li> <!-- categore femme, homme en display flex en mobile -->
-          <li class="displayNone border"><a href="#"> ACCUEIL</a></li>
+          <li class="displayNone border"><a href="index.html"> ACCUEIL</a></li>
           <li class="displayNone"><a href="#">FEMME</a></li>
           <li class="displayNone"><a href="#">HOMME</a></li>
         </ul>
       </div>
       <!-- lien vers accueil + logo -->
       <div class="navLogo">
-        <a href="#"><img class="displayNone" src="image/logo.png" alt="logo credibility"></a>
+        <a href="index.html"><img class="displayNone" src="image/logo.png" alt="logo credibility"></a>
       </div>
       <!-- lien profil/shop/fav -->
       <div class="navbarRight">
@@ -66,132 +66,215 @@
   <!-- fin héroHeader -->
 
 
-    <!-- texte de présentation de la marque -->
-    <div class="presentationText">
-      <h2>CREDIBILITY</h2>
-      <p>EST UNE BOUTIQUE SPÉCIALISÉE DANS LA REVENTE DE PRÊT À PORTER STREETWEAR.</p>
-      <p>FONDÉE EN 2019 EN FRANCE, NOTRE ENSEIGNE SE DÉMARQUE PAR SA SÉLECTION DE PREMIER CHOIX EN TERME D'ORIGINALITÉ ET DE TENDANCE.</p>
-    </div>
+  <!-- texte de présentation de la marque -->
+  <div class="presentationText">
+    <h2>CREDIBILITY</h2>
+    <p>EST UNE BOUTIQUE SPÉCIALISÉE DANS LA REVENTE DE PRÊT À PORTER STREETWEAR.</p>
+    <p>FONDÉE EN 2019 EN FRANCE, NOTRE ENSEIGNE SE DÉMARQUE PAR SA SÉLECTION DE PREMIER CHOIX EN TERME D'ORIGINALITÉ ET DE TENDANCE.</p>
+  </div>
 
   <!-- div pour ajouter les lignes de séparation personnalisée-->
   <div class="container">
-      <div class="deco">
-        <img id="respSize" src="image/deco.jpg" alt="">
-      </div>
+    <div class="deco">
+      <img id="respSize" src="image/deco.jpg" alt="">
     </div>
+  </div>
 
-    <!-- section best seller -->
+  <!-- section best seller -->
 
-    <section class="marginBottomBS">
-      <div class="container3 flexBestSeller">
-        <div class="leftF"><a href="#">
+  <section class="marginBottomBS">
+    <div class="container3 flexBestSeller">
+      <div class="leftF"><a href="#">
         </a>
-        </div>
-        <div class="rightH">
-          <a href="#" class=""></a>
-        </div>
-        <div class="sellerDiv">
-          <p>SELLER</p>
-        </div>
-        <div class="bestDiv">
-          <p>BEST</p>
-        </div>
-        <div class="bsF">
-        <a href=""><p>FEMME</p></a>
+      </div>
+      <div class="rightH">
+        <a href="#" class=""></a>
+      </div>
+      <div class="sellerDiv">
+        <p>SELLER</p>
+      </div>
+      <div class="bestDiv">
+        <p>BEST</p>
+      </div>
+      <div class="bsF">
+        <a href="">
+          <p>FEMME</p>
+        </a>
       </div>
       <div class="bsH">
-      <a href=""><p>HOMME</p></a>
-    </div>
+        <a href="">
+          <p>HOMME</p>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- div pour ajouter les lignes de séparation personnalisée-->
+  <!-- div pour ajouter les lignes de séparation personnalisée-->
 
-    <div class="container">
-        <div class="deco2">
-          <img id="respSize" src="image/deco.jpg" alt="">
+  <div class="container">
+    <div class="deco2">
+      <img id="respSize" src="image/deco.jpg" alt="">
+    </div>
+  </div>
+<div class="cadeaux">
+<p id="typing">QUELQUES IDÉES CADEAUX</p>
+<p>(...)</p>
+</div>
+  <!--  Section shopping -->
+  <section class="marginShop">
+    <div class="container4">
+
+      <!-- article 1 -->
+      <article class="flexArticle width20 txtAlignCenter hoverArticle">
+        <a href="#"><div><img src="image/article1.jpg" alt=""></div>
+        <div>
+          <button type="button" name="addFav" class="addFavArticle"><i class="far fa-heart"></i> Ajouter aux favoris</button>
+        </div>
+        <div>
+          <button type="button" name="addShop" class="addShopArticle"><i class="fas fa-cart-arrow-down"></i> AJouter au panier</button>
+        </div>
+        <div class="">
+          <h3>T-SHIRT (UNISEXE) - THRASHER</h3>
+        </div>
+        <div class="">
+          <p>39,00€</p>
+        </div>
+        </a>
+      </article>
+
+      <!-- article2 -->
+
+      <article class="flexArticle width20 txtAlignCenter hoverArticle">
+        <a href="#"><div><img src="image/article2.jpg" alt=""></div>
+        <div>
+          <button type="button" name="addFav" class="addFavArticle"><i class="far fa-heart"></i> Ajouter aux favoris</button>
+        </div>
+        <div>
+          <button type="button" name="addShop" class="addShopArticle"><i class="fas fa-cart-arrow-down"></i> AJouter au panier</button>
+        </div>
+        <div class="">
+          <h3>PULL (HOMME) - OFF WHITE</h3>
+        </div>
+        <div class="">
+          <p>530,00€</p>
+        </div>
+      </a>
+      </article>
+
+      <!-- article 3 -->
+
+      <article class="flexArticle txtAlignCenter hoverArticle">
+        <a href="#"><div><img src="image/article3.jpg" alt=""></div>
+        <div>
+          <button type="button" name="addFav" class="addFavArticle"><i class="far fa-heart"></i> Ajouter aux favoris</button>
+        </div>
+        <div>
+          <button type="button" name="addShop" class="addShopArticle"><i class="fas fa-cart-arrow-down"></i> AJouter au panier</button>
+        </div>
+        <div class="">
+          <h3>T-SHIRT (FEMME) - LEVIS</h3>
+        </div>
+        <div class="">
+          <p>30,00€</p>
+        </div>
+      </a>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!--  Bandeau PROMO -->
+
+  <section>
+    <div class="containerPromo promoBckg">
+      <div class="promo50">
+        <a class="textPromo50" href="#">
+          -50% sur toute une sélection
+        </a>
+      </div>
+      <div class="ctaPromo">
+        <a class="textCtaPromo" href="#">
+          JE FONCE
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- bandeau logo avantages -->
+
+  <section class="sectionAdv">
+    <div class="containerAvantages">
+      <div class="flexImgAdv">
+        <img src="image/adv1.svg" alt="">
+        <p>ESSAYEZ D'ABORD,PAYEZ APRÈS</p>
+      </div>
+      <div class="flexImgAdv">
+        <img src="image/adv2.svg" alt="">
+        <p>LIVRAISON RAPIDE, RETOUR GRATUIT</p>
+      </div>
+      <div class="flexImgAdv">
+        <img src="image/adv3.svg" alt="">
+        <p>SATISFAIT OU REMBOURSÉ</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="containerFooter">
+      <div class="footCol1">
+        <img src="image/logo.png" alt="">
+        <p>DU PLUS ORIGINAL AU PLUS TENDANCE;<br>DU SWEAT, JEAN, BASKET, POLO, T-SHIRT JUSQU'AUX ACCESSOIRES TEL QUE LES SACOCHES, CASQUETTES, BONNETS (...)</p>
+        <p>NOUS METTONS TOUT EN OEUVRE POUR VOUS OFFRIR LE MEILLEUR DU STREETWEAR.</p>
+          <div id="textAlignRight"><a href="#>"<i class="fab fa-facebook-f"></a></i> <a href="#"><i class="fab fa-instagram"></i> </a><a href="#"><i class="fab fa-twitter"></i></div></a>
+      </div>
+      <div class="footCol2">
+        <div>
+          <p><i class="far fa-envelope"></i> CONTACT</p>
+        </div>
+        <div>
+          <label for="name">Nom</label>
+          <br>
+          <input type="text" name="name">
+
+        </div>
+        <div>
+          <label for="mail">EMAIL</label>
+          <br>
+          <input type="email" name="mail">
+
+        </div>
+        <div>
+          <label for="message">MESSAGE</label>
+          <br>
+          <textarea name="message" rows="8" cols="80"></textarea>
+        </div>
+
+
+        <div class="btnAlignR">
+          <input class="btn" type="submit" value="Envoyer">
         </div>
       </div>
-
-<!--  Section shopping -->
-<section class="marginShop">
-  <div class="container4">
-
-    <!-- article 1 -->
-    <article class="flexArticle width20 txtAlignCenter">
-      <div><img src="image/article1.jpg" alt=""></div>
-      <div class="addFavArticle">
-        <a href="#"><i class="far fa-heart"></i> Ajouter aux favoris</a>
-      </div>
-      <div class="addShopArticle">
-        <a href="#"><i class="fas fa-cart-arrow-down"></i> AJouter au panier</a>
-      </div>
-      <div class="">
-        <h3>T-SHIRT (UNISEXE) - THRASHER</h3>
-      </div>
-      <div class="">
-        <p>39,00€</p>
-      </div>
-    </article>
-
-<!-- article2 -->
-
-<article class="flexArticle width20 txtAlignCenter">
-  <div><img src="image/article2.jpg" alt=""></div>
-  <div class="addFavArticle">
-    <a href="#"><i class="far fa-heart"></i> Ajouter aux favoris</a>
-  </div>
-  <div class="addShopArticle">
-    <a href="#"><i class="fas fa-cart-arrow-down"></i> AJouter au panier</a>
-  </div>
-  <div class="">
-    <h3>PULL (HOMME) - OFF WHITE</h3>
-  </div>
-  <div class="">
-    <p>530,00€</p>
-  </div>
-</article>
-
-<!-- article 3 -->
-
-<article class="flexArticle widthArticle txtAlignCenter">
-  <div><img src="image/article3.jpg" alt=""></div>
-  <div class="addFavArticle">
-    <a href="#"><i class="far fa-heart"></i> Ajouter aux favoris</a>
-  </div>
-  <div class="addShopArticle">
-    <a href="#"><i class="fas fa-cart-arrow-down"></i> AJouter au panier</a>
-  </div>
-  <div class="">
-    <h3>T-SHIRT (FEMME) - LEVIS</h3>
-  </div>
-  <div class="">
-    <p>30,00€</p>
-  </div>
-</article>
-
-  </div>
-</section>
-
-
-<!--  Bandeau PROMO -->
-
-<section>
-  <div class="containerPromo promoBckg">
-    <div class="">
-      <a href="#">
-
-      </a>
+      <div class="footCol3">
+        <div>
+          <ul>
+          <li><a href="#">MENTIONS LÉGALES</a></li>
+          <li><a href="#">CGV</a></li>
+          <li><a href="#">CGU</a></li>
+          <li><a href="#">AIDES - FAQ</a></li>
+          <li><a href="">CONFIDENTIALITÉ</a></li>
+          </ul>
+        </div>
+        <div class="logoFooter" id="flexRow">
+          <a href="#"><i class="fab fa-cc-mastercard"></i></a>
+          <a href="#"><i class="fab fa-cc-visa"></i></a>
+          <a href="#"><i class="fab fa-cc-paypal"></i></a>
+        </div>
+</div>
     </div>
-    <div class="">
-      <a href="#">
-
-      </a>
-    </div>
-  </div>
-</section>
-
-
+  </footer>
 </body>
 
 </html>

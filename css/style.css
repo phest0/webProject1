@@ -32,13 +32,13 @@ body {
   /* couleur du background et la police par défaut */
   font-family: 'RobotoMono-Medium';
   background-color: #F9F4F5;
+  overflow-x: hidden;
 }
 
 img {
   /* indiquer que les images font toutes 100% du parent */
   max-width: 100%;
 }
-
 
 a {
   /* pour modifier couleur des liens de la navbar et enlever le soulignement des liens */
@@ -61,14 +61,25 @@ a {
   width: 1680px;
   margin: 0 auto;
   padding: 16px;
+  position: relative;
 }
-.displayFlex{
+.container a{
+  display: block
+}
+.navLogo{
+  position: absolute;
+right: 704px;
+top: 20px;
+}
+.displayFlex {
   display: flex;
   justify-content: space-between;
 }
+
 .container i {
   font-size: 40px;
 }
+
 /* je met une couleur à la div qui entour le container de la navbar + je fixe la position de la nav*/
 .navbar {
   background-color: #1A1A1A;
@@ -88,20 +99,25 @@ a {
   display: flex;
   list-style-type: none;
 }
-
+.navbarLeft li{
+  margin-right: 50px;
+}
 .navbarLeft li, .navbarRight li {
   /* je personnalise les listes de ma navbar */
   padding: 8px 8px 8px 8px;
   font-size: 25px;
   letter-spacing: 5px;
 }
-.border{
+
+.border {
   border: solid 1px white;
   margin-right: 10px;
 }
-.logoDisplayNone{
+
+.logoDisplayNone {
   display: none;
 }
+
 #noMarginLi {
   /* je cache mon icone menu présent dans la div à gauche */
   padding: 0px;
@@ -120,19 +136,19 @@ a {
 }
 
 /********************************************FIN NAV / DEBUT HEADER *********************************************************/
-
-
-.containerHeader{
+.containerHeader {
   width: 1920px;
   height: 1220px;
   margin: 0 auto;
 }
-.headerBckg{
+
+.headerBckg {
   background-image: url(../image/heroHeader.jpg);
   background-position: right 140px;
   background-repeat: no-repeat;
   position: relative;
 }
+
 .h1Div {
   border: solid 4px;
   position: absolute;
@@ -142,22 +158,25 @@ a {
   background-color: #F9F4F5;
   text-align: center;
 }
+
 .ctaHeader {
   position: absolute;
-      bottom: 85px;
-      right: 242px;
-      width: 19%;
-      background-color: #040404;
-      text-align: center;
-      font-size: 50PX;
-      box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
-      line-height: 50px;
-      letter-spacing: 6px;
-      font-weight: bold;
+  bottom: 85px;
+  right: 242px;
+  width: 19%;
+  background-color: #040404;
+  text-align: center;
+  font-size: 50PX;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+  line-height: 50px;
+  letter-spacing: 6px;
+  font-weight: bold;
 }
-#ctaFont{
-        color: #E6902C;
+
+#ctaFont {
+  color: #E6902C;
 }
+
 /* animation en hover du call to action from headerHéro */
 .ctaHeader:hover {
   transition: 1s;
@@ -175,9 +194,7 @@ h1 {
   font-weight: 100;
   font-size: 2em;
 }
-
-
-
+/* *************************************TEXTE PRESENTATION************************************************ */
 /* je personnalie le text de présentation */
 .presentationText {
   width: 1170px;
@@ -193,61 +210,68 @@ h1 {
   margin-top: 100px;
   margin-bottom: 150px;
 }
-.deco2{
+
+.deco2 {
   display: flex;
   justify-content: flex-start;
   margin-top: 100px;
   margin-bottom: 150px;
 }
-
+/* *********************************************BEST SELLER************************************************* */
 /* je met en row les divs best seller */
-.container3{
+.container3 {
   width: 1170px;
-height: 655px;
-margin: 0 auto;
+  height: 655px;
+  margin: 0 auto;
 }
-.container3 a{
-display: block;
-width: 100%;
-height: 100%;
+
+.container3 a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
-.container3 .bestDiv p{
+
+.container3 .bestDiv p {
   margin: 0px;
   padding: 0px;
   margin-top: 28Px;
   margin-left: 30px;
 }
-.container3 .sellerDiv p{
-margin-left: 16Px;
+
+.container3 .sellerDiv p {
+  margin-left: 16Px;
 }
-.container3 .bsF p{
+
+.container3 .bsF p {
   margin-left: 48px;
   margin-top: 23px;
 }
-.container3 .bsH p{
+
+.container3 .bsH p {
   margin-left: 48px;
   margin-top: 23px;
 }
-.flexBestSeller{
+
+.flexBestSeller {
   display: flex;
-    justify-content: center;
-    position: relative;
+  justify-content: center;
+  position: relative;
 }
+
 .leftF {
   background-image: url(../image/photoF);
-width: 50%;
-background-repeat: no-repeat;
-background-size: contain;
-margin-right: 10PX;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10PX;
 }
 
-.rightH{
+.rightH {
   background-image: url(../image/photoH);
-
-      background-repeat: no-repeat;
-      width: 50%;
-      background-size: contain;
-      margin-left: 10px;
+  background-repeat: no-repeat;
+  width: 50%;
+  background-size: contain;
+  margin-left: 10px;
 }
 
 /* effet pour le hover de mes images */
@@ -260,7 +284,6 @@ margin-right: 10PX;
   transition: filter 0.9s;
   filter: contrast(5.00);
 }
-
 
 .sellerDiv {
   position: absolute;
@@ -283,18 +306,19 @@ margin-right: 10PX;
 
 .bestDiv {
   position: absolute;
-      bottom: 288px;
-      left: 324px;
-      width: 29%;
-      height: 20%;
-      background: #E6902C;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      text-align: center;
-      font-size: 4rem;
-      font-weight: bold;
-      letter-spacing: 40Px;
+  bottom: 288px;
+  left: 324px;
+  width: 29%;
+  height: 20%;
+  background: #E6902C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 40Px;
 }
-.bsF{
+
+.bsF {
   position: absolute;
   width: 25%;
   height: 12%;
@@ -310,7 +334,8 @@ margin-right: 10PX;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   letter-spacing: 0.18em;
 }
-.bsH{
+
+.bsH {
   position: absolute;
   width: 25%;
   height: 12%;
@@ -326,79 +351,283 @@ margin-right: 10PX;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   letter-spacing: 0.18em;
 }
-.marginBottomBS{
+
+.marginBottomBS {
   margin-bottom: 70px;
 }
-.container4{
-  width: 1680px;
-height: 655px;
-margin: 0 auto;
-display: flex;
-justify-content: space-between;
-align-items: center;
+.cadeaux{
+
+  margin: 0 auto;
+      width: 1170px;
+
+        margin-bottom: 75px;
+      font-size: 55px;
+            text-align: center;
+
 }
-.container4 a{
+#typing{
+  overflow: hidden;
+
+  display: inline-block;
+  animation:
+typing 3.5s steps(100, end);
+animation-iteration-count: infinite;
+white-space: nowrap;
+
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+.cadeaux p {
+  margin-top: 0px;
+}
+/* *********************************************ARTICLE SHOP *********************************************************** */
+.container4 {
+  width: 1680px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container4 a {
   color: #040404;
 }
-.flexArticle{
+article{
+  width: 410px;
+    padding-top: 30px;
+}
+.flexArticle {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.addFavArticle{
-background: #EEEEEE;
-border: 1px solid #040404;
-box-sizing: border-box;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-width: 360px;
-height: 46px;
-margin-top: 16px;
-    margin-bottom: 20px;
+
+.addFavArticle {
+  background: #EEEEEE;
+  border: 1px solid #040404;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 360px;
+  height: 46px;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  font-size: 20Px;
+  letter-spacing: 2px;
+  margin-top: 12PX;
+  padding-top: 0px;
+  display: block;
+  line-height: 0px;
+  font-family: 'RobotoMono-Medium';
 }
-.addShopArticle{
-  background: #A0E38F;
-border: 1px solid #040404;
-box-sizing: border-box;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-width: 360px;
-height: 46px;
-margin-bottom: 10px;
+
+.addShopArticle {
+  background: #94CF92;
+  border: 1px solid #040404;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 360px;
+  height: 46px;
+  margin-bottom: 10px;
+  font-size: 20Px;
+  letter-spacing: 2px;
+  margin-top: 12PX;
+  padding-top: 0px;
+  display: block;
+  line-height: 0px;
+  font-family: 'RobotoMono-Medium';
 }
-.widthArticle{
+
+.widthArticle {
   width: 22%;
 }
-.txtAlignCenter{
+
+.txtAlignCenter {
   text-align: center;
 }
-.addFavArticle a{
-  font-size: 20Px;
-letter-spacing: 2px;
-margin-top: 12PX;
-padding-top: 0px;
-display: block;
-line-height: 0px;
-}
-.addShopArticle a{
-  font-size: 20Px;
-letter-spacing: 2px;
-margin-top: 12PX;
-padding-top: 0px;
-display: block;
-line-height: 0px;
-}
-.marginShop{
-  margin-top: 30px;
-  margin-bottom: 115px;
-}
-.containerPromo{
 
-    width: 1920px;
-    height: 1125px;
-    margin: 0 auto;
-  }
-  .promoBckg{
-    background-image: url(../image/promoBanner.jpg);
 
-    background-repeat: no-repeat;
-    position: relative;
-  }
+.marginShop {
+
+  margin-bottom: 165px;
+}
+.hoverArticle:hover{
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transition: 0.8s;
+}
+/* **********************************************BANDEAU PROMO************************************************ */
+.containerPromo {
+  width: 1920px;
+  height: 1125px;
+  margin: 0 auto;
+}
+
+.promoBckg {
+  background-image: url(../image/promoBanner.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.promo50{
+  position: absolute;
+  top: 180px;
+  left: 360px;
+  width: 42%;
+  height: 25%;
+  background: rgba(4, 4, 4, 0.97);
+}
+.textPromo50{
+  font-weight: bold;
+      font-size: 80px;
+      line-height: 137px;
+      display: flex;
+      text-align: center;
+      letter-spacing: 4px;
+      color: #F9F4F5;
+}
+.ctaPromo{
+  position: absolute;
+      bottom: 117px;
+      right: 319px;
+      width: 36%;
+      height: 20%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background-color: #E6902C;
+      animation-name: exemple;
+      animation-duration: 4.2s;
+      animation-iteration-count: infinite;
+}
+.textCtaPromo{
+  font-weight: bold;
+      font-size: 95px;
+      line-height: 220px;
+      display: block;
+      text-align: center;
+      letter-spacing: 16px;
+      color: #F9F4F5;
+      animation-name: exemple2;
+      animation-duration: 4.2s;
+      animation-iteration-count: infinite;
+}
+@keyframes exemple {
+  0%   {background-color: #E6902C;}
+  25%   {background-color: #E6902C;}
+    50%  {background-color: #1A1A1A;}
+    100% {background-color: #F9F4F5;}
+}
+@keyframes exemple2 {
+    0%   {color: #F9F4F5;}
+    25%  {color: #F9F4F5;}
+    50%  {color: #F9F4F5;}
+    100% {color: #1A1A1A;}
+}
+/* ***************************BANDEAU ADVANTAGE******************************************** */
+.containerAvantages {
+  width: 1500px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+}
+.containerAvantages img{
+height: 120Px;
+}
+
+.sectionAdv{
+  height: 170px;
+  margin-bottom: 270px;
+      margin-top: 180px;
+}
+.flexImgAdv{
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 70px 0px 70px;
+}
+.flexImgAdv p{
+  font-size: 30px;
+  text-align: center;
+
+}
+/* ************************************** footer ************************** */
+.containerFooter{
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #A6A2A3;
+}
+.footCol1{
+  width: 40%;
+    text-align: left;
+    padding: 36px;
+    border-right: solid 3px #1A1A1A;
+    color: #1A1A1A;
+        font-size: 30px;
+}
+.footCol2{
+  text-align: left;
+padding: 36px;
+width: 40%;
+border-right: solid 3PX;
+font-size: 20px;
+color: #1A1A1A;
+}
+.footCol2 p {
+  font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+input{
+  margin-top: 5px;
+    margin-bottom: 5px;
+    width: 180px;
+    height: 34px;
+}
+textarea{
+  margin-top: 5px;
+  resize: none;
+}
+.btn {
+  color: #E6902C;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: RobotoMono-Medium;
+  height: 50px;
+  letter-spacing: 3px;
+  max-width: 160px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #1A1A1A;
+}
+.btnAlignR{
+text-align: right;
+margin-top:14px;
+}
+.footCol3{
+  text-decoration: none;
+  list-style-type: none;
+  padding-top: 36px;
+  font-size: 28px;
+  text-align: right;
+}
+.footCol3 ul{
+  list-style: none;
+}
+.footCol3 ul li{
+  list-style: none;
+  margin-bottom:20px;
+}
+.footCol3 ul li a{
+  color:#1A1A1A;
+}
+.logoFooter{
+  font-size: 60px;
+    text-align: right;
+}
+#textAlignRight{
+  font-size: 40px;
+  text-align: right;
+}

@@ -1,177 +1,321 @@
 /* media query for smartphone */
-@media (max-device-width:767px){
+@media (max-device-width:767px) {
+
   /* je cache la liste de gauche de ma navbar */
-  .displayNone{
+  .displayNone {
     display: none;
   }
+
   /* j'affiche mon icone menu de la navbar */
-  #noMarginLi{
+  #noMarginLi {
     display: block;
   }
+
   /* arrangement de la navbar */
-  .container{
+  .container {
+    width: 90%;
+    height: 55px;
+    padding-top: 5PX
+  }
+  .container i {
+    font-size: 34px;
+  }
+  .navbar .container .navbarRight ul {
+    padding: 10PX 0PX 10PX 0PX;
+  }
+
+  .logoDisplayBlock {
+    display: block;
+    padding: 10px 0px 0px 12px;
+  }
+
+  .navbarLeft li{
+    margin-right: 0px;
+  }
+
+  /* **********************Fin nav / début header ********************/
+  .headerBckg {
+    background-image: url(../image/headerResp.jpg);
+    background-position: right 170px;
+    height: 585px;
+    background-repeat: no-repeat;
     width: 100%;
   }
 
-.navbar .container .navbarRight ul {
-    padding: 10PX 0PX 10PX 0PX;
-  }
-.logoDisplayBlock{
-  display: block;
-  padding: 10px 0px 0px 5px;
-}
-.container{
-padding: 16px 16px 0px 16px;
-}
-
-/* **********************Fin nav / début header ********************/
-
-.headerBckg{
-  background-image: url(../image/headerResp.jpg);
-  background-position: right 170px;
-  height: 585px;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-h1 {
+  h1 {
     color: #040404;
     font-weight: 100;
     font-size: 1em;
   }
+
   .h1Div {
-      border: solid 4px;
-      position: absolute;
-      top: 248px;
-      left: 25px;
-      width: 50%;
-      background-color: #F9F4F5;
-      text-align: center;
+    border: solid 4px;
+    position: absolute;
+    top: 248px;
+    left: 25px;
+    width: 50%;
+    background-color: #F9F4F5;
+    text-align: center;
   }
 
-.ctaHeader{
-position: absolute;
-bottom: 44px;
-right: 36px;
-width: 40%;
-background-color: #040404;
+  .ctaHeader {
+    position: absolute;
+    bottom: 44px;
+    right: 36px;
+    width: 40%;
+    background-color: #040404;
+    text-align: center;
+    font-size: 20PX;
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+    line-height: 25px;
+    color: #E6902C;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  /* ****************************************Texte présentation *************************************** */
+  .presentationText {
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 auto;
+    margin-top: 38px;
+    padding: 5px;
+  }
+
+  .deco {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  #respSize {
+    width: 50%;
+  }
+.cadeaux{
+  margin: 0 auto;
+width: 100%;
+margin-bottom: 0;
+font-size: 20px;
 text-align: center;
-font-size: 20PX;
-box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
-line-height: 25px;
-color: #E6902C;
-  letter-spacing: 2px;
-  font-weight: bold;
+margin-top: 45px;
 }
-/* ****************************************Texte présentation *************************************** */
-.presentationText {
-      width: 100%;
-      font-size: 1rem;
-      margin: 0 auto;
-      margin-top: 38px;
-      padding: 5px;
-}
-.deco{
-  margin-top: 0px;
-  margin-bottom: 30px;
-}
-#respSize{
-  width: 50%;
-}
-/* ******************************************best seller***************************************** */
-.container3{
-  width: 100%;
-  height: 205px;
-}
-.container3 .bestDiv p{
-  margin: 0px;
+  /* ******************************************best seller***************************************** */
+  .container3 {
+    width: 100%;
+    height: 205px;
+  }
+
+  .container3 .bestDiv p {
+    margin: 0px;
     padding: 0px;
     margin-top: 1Px;
     margin-left: 5px;
-}
-.sellerDiv{
-  position: absolute;
-      width: 105px;
-      height: 40px;
-      left: 160px;
-      top: 19px;
-      background: #F9F4F5;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      font-size: 22px;
-      line-height: 1px;
-      letter-spacing: 3px;
-}
-.sellerDiv p{
-  margin-left: 1px;
-}
-.bestDiv{
-  position: absolute;
-      width: 100px;
-      height: 40px;
-      left: 111px;
-      top: 74px;
-      font-size: 30Px;
-      letter-spacing: 6px;
+  }
 
-}
-.bsF{
-  position: absolute;
-width: 105px;
-height: 40px;
-left: 42px;
-bottom: 15px;
+  .sellerDiv {
+    position: absolute;
+    width: 105px;
+    height: 40px;
+    left: 160px;
+    top: 19px;
+    background: #F9F4F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 22px;
+    line-height: 1px;
+    letter-spacing: 3px;
+  }
+
+  .sellerDiv p {
+    margin-left: 1px;
+  }
+
+  .bestDiv {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 111px;
+    top: 74px;
+    font-size: 30Px;
+    letter-spacing: 6px;
+  }
+
+  .bsF {
+    position: absolute;
+    width: 105px;
+    height: 40px;
+    left: 42px;
+    bottom: 15px;
     font-size: 25px;
-}
-.bsH{
-  position: absolute;
+  }
+
+  .bsH {
+    position: absolute;
     width: 105px;
     height: 40px;
     right: 42px;
     bottom: 15px;
-        font-size: 25px;
-}
-.container3 .bsH p, .container3 .bsF p{
-  margin-left: 3px;
-  margin-top: 4px;
-}
-.container3 .sellerDiv p {
+    font-size: 25px;
+  }
+
+  .container3 .bsH p, .container3 .bsF p {
+    margin-left: 3px;
+    margin-top: 4px;
+  }
+
+  .container3 .sellerDiv p {
     margin-left: 4Px;
-}
+  }
 
-.leftF {
-  margin-right: 3PX;
-}
-.rightH{
-  margin-right: 8PX;
+  .leftF {
+    margin-right: 3PX;
+  }
+
+  .rightH {
+    margin-right: 8PX;
     margin-left: 1px;
-}
-.deco2{
-  margin-top: 20px;
-  margin-bottom: 45px;
-}
-.marginBottomBS{
-  margin-bottom: 0px;
-}
-.container4{
-  width: 100%;
-  flex-direction: column;
-}
-.widthArticle{
-  width: 100%;
-}
-.promoBckg{
-  background-image: url(../image/promoBannerResp.jpg);
+  }
 
-  background-repeat: no-repeat;
-  position: relative;
-}
-.container4{
-  height: 100%;
-}
-.marginShop {
+  .deco2 {
+    margin-top: 40px;
     margin-bottom: 45px;
-}
-.containerPromo {
+  }
+
+  .marginBottomBS {
+    margin-bottom: 0px;
+  }
+
+  .container4 {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .widthArticle {
+    width: 100%;
+  }
+
+  .promoBckg {
+    background-image: url(../image/promoBannerResp.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .container4 {
+    height: 100%;
+  }
+
+  .marginShop {
+    margin-bottom: 45px;
+  }
+
+  .containerPromo {
     width: 100%;
     height: 755px;
+  }
+  .textCtaPromo{
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 1;
+    display: block;
+    text-align: center;
+    letter-spacing: 11px;
+    color: #F9F4F5;
+    animation-name: exemple2;
+    animation-duration: 4.2s;
+    animation-iteration-count: infinite;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+  .ctaPromo{
+    position: absolute;
+      bottom: 54px;
+      right: 27px;
+      width: 50%;
+      height: 21%;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background-color: #E6902C;
+      animation-name: exemple;
+      animation-duration: 4.2s;
+      animation-iteration-count: infinite;
+  }
+  .promo50{
+    position: absolute;
+    top: 63px;
+    left: 36px;
+    width: 49%;
+    height: 20%;
+    background: rgba(4, 4, 4, 0.97);
+  }
+  .textPromo50{
+    padding-top: 12px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+    display: block;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #F9F4F5;
+  }
+  .containerPromo {
+    width: 100%;
+    height: 425px;
+}
+/* ************************Bandeau ADV ******************************************** */
+.sectionAdv{
+height: 180px;
+    margin-top: 50px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.containerAvantages{
+  width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 26px;
+}
+.flexImgAdv{
+display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+
+}
+.flexImgAdv p {
+    font-size: 11px;
+    text-align: center;
+  }
+  .containerAvantages img {
+    height: 40Px;
+}
+
+/* ********************************FOOTER*************************************** */
+.containerFooter{
+  flex-direction: column;
+    width: 100%;
+}
+textarea{
+width: 90%
+  }
+  .footCol1, .footCol2, .footCol3{
+    border-right: none;
+    border-bottom: solid 3px #1A1A1A;
+  }
+  .footCol1, .footCol2{
+    width: 100%;
+    font-size: 20px;
+  }
+  .footCol3 div{
+    width: 100%;
+display: flex;
+flex-direction: column;
+padding-right: 28px;
+  }
+  #flexRow{
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footCol3 div {
+  padding-right: 0px;
+  text-align: left;
 }
 }
