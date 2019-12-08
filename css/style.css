@@ -63,14 +63,17 @@ a {
   padding: 16px;
   position: relative;
 }
-.container a{
+
+.container a {
   display: block
 }
-.navLogo{
+
+.navLogo {
   position: absolute;
-right: 704px;
-top: 20px;
+  right: 704px;
+  top: 20px;
 }
+
 .displayFlex {
   display: flex;
   justify-content: space-between;
@@ -99,9 +102,11 @@ top: 20px;
   display: flex;
   list-style-type: none;
 }
-.navbarLeft li{
+
+.navbarLeft li {
   margin-right: 50px;
 }
+
 .navbarLeft li, .navbarRight li {
   /* je personnalise les listes de ma navbar */
   padding: 8px 8px 8px 8px;
@@ -194,6 +199,7 @@ h1 {
   font-weight: 100;
   font-size: 2em;
 }
+
 /* *************************************TEXTE PRESENTATION************************************************ */
 /* je personnalie le text de présentation */
 .presentationText {
@@ -207,16 +213,16 @@ h1 {
 .deco {
   display: flex;
   justify-content: flex-end;
-  margin-top: 100px;
-  margin-bottom: 150px;
+margin:65px;
 }
 
 .deco2 {
   display: flex;
   justify-content: flex-start;
-  margin-top: 100px;
-  margin-bottom: 150px;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
+
 /* *********************************************BEST SELLER************************************************* */
 /* je met en row les divs best seller */
 .container3 {
@@ -355,35 +361,38 @@ h1 {
 .marginBottomBS {
   margin-bottom: 70px;
 }
-.cadeaux{
 
+.cadeaux {
   margin: 0 auto;
-      width: 1170px;
-
-        margin-bottom: 75px;
-      font-size: 55px;
-            text-align: center;
-
+  width: 1170px;
+  margin-bottom: 75px;
+  font-size: 55px;
+  text-align: center;
 }
-#typing{
-  overflow: hidden;
 
+#typing {
+  overflow: hidden;
   display: inline-block;
   animation:
-typing 3.5s steps(100, end);
-animation-iteration-count: infinite;
-white-space: nowrap;
-
+    typing 3.5s steps(100, end);
+  animation-iteration-count: infinite;
+  white-space: nowrap;
 }
+
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
+  from {
+    width: 0
+  }
 
+  to {
+    width: 100%
+  }
+}
 
 .cadeaux p {
   margin-top: 0px;
 }
+
 /* *********************************************ARTICLE SHOP *********************************************************** */
 .container4 {
   width: 1680px;
@@ -397,10 +406,12 @@ white-space: nowrap;
 .container4 a {
   color: #040404;
 }
-article{
+
+article {
   width: 410px;
-    padding-top: 30px;
+  padding-top: 30px;
 }
+
 .flexArticle {
   display: flex;
   flex-direction: column;
@@ -426,7 +437,7 @@ article{
 }
 
 .addShopArticle {
-  background: #94CF92;
+  background: #EFB878;
   border: 1px solid #040404;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -450,15 +461,15 @@ article{
   text-align: center;
 }
 
-
 .marginShop {
-
   margin-bottom: 165px;
 }
-.hoverArticle:hover{
+
+.hoverArticle:hover {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
   transition: 0.8s;
 }
+
 /* **********************************************BANDEAU PROMO************************************************ */
 .containerPromo {
   width: 1920px;
@@ -471,7 +482,8 @@ article{
   background-repeat: no-repeat;
   position: relative;
 }
-.promo50{
+
+.promo50 {
   position: absolute;
   top: 180px;
   left: 360px;
@@ -479,117 +491,153 @@ article{
   height: 25%;
   background: rgba(4, 4, 4, 0.97);
 }
-.textPromo50{
+
+.textPromo50 {
   font-weight: bold;
-      font-size: 80px;
-      line-height: 137px;
-      display: flex;
-      text-align: center;
-      letter-spacing: 4px;
-      color: #F9F4F5;
+  font-size: 80px;
+  line-height: 137px;
+  display: flex;
+  text-align: center;
+  letter-spacing: 4px;
+  color: #F9F4F5;
 }
-.ctaPromo{
+
+.ctaPromo {
   position: absolute;
-      bottom: 117px;
-      right: 319px;
-      width: 36%;
-      height: 20%;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      background-color: #E6902C;
-      animation-name: exemple;
-      animation-duration: 4.2s;
-      animation-iteration-count: infinite;
+  bottom: 117px;
+  right: 319px;
+  width: 36%;
+  height: 20%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #E6902C;
+  animation-name: exemple;
+  animation-duration: 4.2s;
+  animation-iteration-count: infinite;
 }
-.textCtaPromo{
+
+.textCtaPromo {
   font-weight: bold;
-      font-size: 95px;
-      line-height: 220px;
-      display: block;
-      text-align: center;
-      letter-spacing: 16px;
-      color: #F9F4F5;
-      animation-name: exemple2;
-      animation-duration: 4.2s;
-      animation-iteration-count: infinite;
+  font-size: 95px;
+  line-height: 220px;
+  display: block;
+  text-align: center;
+  letter-spacing: 16px;
+  color: #F9F4F5;
+  animation-name: exemple2;
+  animation-duration: 4.2s;
+  animation-iteration-count: infinite;
 }
+
 @keyframes exemple {
-  0%   {background-color: #E6902C;}
-  25%   {background-color: #E6902C;}
-    50%  {background-color: #1A1A1A;}
-    100% {background-color: #F9F4F5;}
+  0% {
+    background-color: #E6902C;
+  }
+
+  25% {
+    background-color: #E6902C;
+  }
+
+  50% {
+    background-color: #1A1A1A;
+  }
+
+  100% {
+    background-color: #F9F4F5;
+  }
 }
+
 @keyframes exemple2 {
-    0%   {color: #F9F4F5;}
-    25%  {color: #F9F4F5;}
-    50%  {color: #F9F4F5;}
-    100% {color: #1A1A1A;}
+  0% {
+    color: #F9F4F5;
+  }
+
+  25% {
+    color: #F9F4F5;
+  }
+
+  50% {
+    color: #F9F4F5;
+  }
+
+  100% {
+    color: #1A1A1A;
+  }
 }
+
 /* ***************************BANDEAU ADVANTAGE******************************************** */
 .containerAvantages {
   width: 1500px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-
-}
-.containerAvantages img{
-height: 120Px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.sectionAdv{
+.containerAvantages img {
+  height: 120Px;
+}
+
+.sectionAdv {
   height: 170px;
   margin-bottom: 270px;
-      margin-top: 180px;
+  margin-top: 180px;
 }
-.flexImgAdv{
+
+.flexImgAdv {
   display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0px 70px 0px 70px;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 70px 0px 70px;
 }
-.flexImgAdv p{
+
+.flexImgAdv p {
   font-size: 30px;
   text-align: center;
-
 }
+
 /* ************************************** footer ************************** */
-.containerFooter{
+.containerFooter {
   display: flex;
   margin: 0 auto;
   width: 100%;
   background-color: #A6A2A3;
 }
-.footCol1{
+
+.footCol1 {
   width: 40%;
-    text-align: left;
-    padding: 36px;
-    border-right: solid 3px #1A1A1A;
-    color: #1A1A1A;
-        font-size: 30px;
-}
-.footCol2{
   text-align: left;
-padding: 36px;
-width: 40%;
-border-right: solid 3PX;
-font-size: 20px;
-color: #1A1A1A;
+  padding: 36px;
+  border-right: solid 3px #1A1A1A;
+  color: #1A1A1A;
+  font-size: 30px;
 }
+
+.footCol2 {
+  text-align: left;
+  padding: 36px;
+  width: 40%;
+  border-right: solid 3PX;
+  font-size: 20px;
+  color: #1A1A1A;
+}
+
 .footCol2 p {
   font-size: 35px;
-    margin-top: 0;
-    margin-bottom: 15px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
-input{
+
+input {
   margin-top: 5px;
-    margin-bottom: 5px;
-    width: 180px;
-    height: 34px;
+  margin-bottom: 5px;
+  width: 180px;
+  height: 34px;
 }
-textarea{
+
+textarea {
   margin-top: 5px;
   resize: none;
 }
+
 .btn {
   color: #E6902C;
   cursor: pointer;
@@ -602,32 +650,39 @@ textarea{
   text-transform: uppercase;
   background-color: #1A1A1A;
 }
-.btnAlignR{
-text-align: right;
-margin-top:14px;
+
+.btnAlignR {
+  text-align: right;
+  margin-top: 14px;
 }
-.footCol3{
+
+.footCol3 {
   text-decoration: none;
   list-style-type: none;
   padding-top: 36px;
   font-size: 28px;
   text-align: right;
 }
-.footCol3 ul{
+
+.footCol3 ul {
   list-style: none;
 }
-.footCol3 ul li{
+
+.footCol3 ul li {
   list-style: none;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
-.footCol3 ul li a{
-  color:#1A1A1A;
+
+.footCol3 ul li a {
+  color: #1A1A1A;
 }
-.logoFooter{
+
+.logoFooter {
   font-size: 60px;
-    text-align: right;
+  text-align: right;
 }
-#textAlignRight{
+
+#textAlignRight {
   font-size: 40px;
   text-align: right;
 }
