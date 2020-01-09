@@ -32,7 +32,6 @@ body {
   /* couleur du background et la police par défaut */
   font-family: 'RobotoMono-Medium';
   background-color: #F9F4F5;
-  overflow-x: hidden;
 }
 
 img {
@@ -140,9 +139,8 @@ a {
   padding: 0px;
 }
 
-/********************************************FIN NAV / DEBUT HEADER *********************************************************/
+/********************************************FIN NAV / DEBUT HEADER*********************************************************/
 .containerHeader {
-  width: 1920px;
   height: 1220px;
   margin: 0 auto;
 }
@@ -152,6 +150,7 @@ a {
   background-position: right 140px;
   background-repeat: no-repeat;
   position: relative;
+  width: 100%;
 }
 
 .h1Div {
@@ -213,7 +212,7 @@ h1 {
 .deco {
   display: flex;
   justify-content: flex-end;
-margin:65px;
+  margin: 65px;
 }
 
 .deco2 {
@@ -370,23 +369,8 @@ margin:65px;
   text-align: center;
 }
 
-#typing {
-  overflow: hidden;
-  display: inline-block;
-  animation:
-    typing 3.5s steps(100, end);
-  animation-iteration-count: infinite;
-  white-space: nowrap;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
-  }
+#typoH2 {
+  font-weight: 400;
 }
 
 .cadeaux p {
@@ -396,7 +380,6 @@ margin:65px;
 /* *********************************************ARTICLE SHOP *********************************************************** */
 .container4 {
   width: 1680px;
-  height: 800px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -405,6 +388,14 @@ margin:65px;
 
 .container4 a {
   color: #040404;
+}
+
+h4 {
+  display: block;
+  margin-block-start: 22px;
+  margin-block-end: 0px;
+  margin-inline-start: 51px;
+  margin-inline-end: 0px;
 }
 
 article {
@@ -472,7 +463,6 @@ article {
 
 /* **********************************************BANDEAU PROMO************************************************ */
 .containerPromo {
-  width: 1920px;
   height: 1125px;
   margin: 0 auto;
 }
@@ -481,6 +471,7 @@ article {
   background-image: url(../image/promoBanner.jpg);
   background-repeat: no-repeat;
   position: relative;
+  width: 100%;
 }
 
 .promo50 {
@@ -526,6 +517,14 @@ article {
   animation-name: exemple2;
   animation-duration: 4.2s;
   animation-iteration-count: infinite;
+}
+
+#styleH4Promo {
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: -5px;
+  margin-inline-end: 0px;
 }
 
 @keyframes exemple {
@@ -592,6 +591,17 @@ article {
 .flexImgAdv p {
   font-size: 30px;
   text-align: center;
+}
+
+.h4StyleAdvantage {
+  display: block;
+  margin-block-start: 22px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 /* ************************************** footer ************************** */
@@ -685,4 +695,8 @@ textarea {
 #textAlignRight {
   font-size: 40px;
   text-align: right;
+}
+
+#marginR {
+  margin-left: 20px;
 }
