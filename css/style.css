@@ -82,6 +82,11 @@ a {
   font-size: 40px;
 }
 
+.marginNegNav {
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
 /* je met une couleur à la div qui entour le container de la navbar + je fixe la position de la nav*/
 .navbar {
   background-color: #1A1A1A;
@@ -699,4 +704,8 @@ textarea {
 
 #marginR {
   margin-left: 20px;
+}
+
+.hoverFooter:hover {
+  color: #F9F4F5;
 }
