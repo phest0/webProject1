@@ -709,3 +709,12 @@ textarea {
 .hoverFooter:hover {
   color: #F9F4F5;
 }
+
+.anchor {
+  position: fixed;
+  right: 30px;
+  bottom: 0px;
+  font-size: 70px;
+  opacity: 0.90;
+  color: #040404;
+}

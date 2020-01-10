@@ -354,4 +354,13 @@
     padding-right: 0px;
     text-align: left;
   }
+
+  .anchor {
+    position: fixed;
+    right: 42px;
+    bottom: 0px;
+    font-size: 23px;
+    opacity: 0.90;
+    color: #040404;
+  }
 }
